@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: monospace;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.logo a{
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.heading {
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+}
+
+.menu ul{
+    display: flex;
+}
+.menu a {
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.logo a{
+    display: block;
+    cursor: pointer;
+}
+
+.menu a:hover {
+    background: #fff;
+    color: #000;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.sociais {
+    max-width: 12vw;
+    display: flex;
+}
+
+.sociais a {
+    padding: 5px;
+}
+
+.sociais img:hover {
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+
+.capa {
+    display: flex;
+    background-image: url(/img/capa.jpg);
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.capa img {
+    height: 100%;
+    width: 100%;
+}
+
+.capa h1 {
+    color: #fff;
+    font-size: 1.7em;
+}
+
+.mensagem {
+    max-width: 660px;
+    text-align: center;
+    margin-bottom: 10px;
+    display: none;
+    transition: 2s;
+}
+
+.autor {
+    max-width: 660px;
+    align-items: flex-end;
+    font-size: 1.3em;
+    display: none;
+    transition: 2s;
+}
+
+.sobre {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sobre h1 {
+    font-size: 2.3em;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modelos {
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.modelos div {
+    padding: 10px;
+}
+
+.modelo1 {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    flex-wrap: wrap;
+}
+
+.modelo1 img {
+    width: 100px;
+    height: 100px;
+}
+
+.modelo2 {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    flex-wrap: wrap;
+}
+
+.modelo2 img {
+    width: 100px;
+    height: 100px;
+}
+
+.modelo3 {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    flex-wrap: wrap;
+}
+
+.modelo3 img {
+    width: 100px;
+    height: 100px;
+}
+
+.modelo1 img:hover {
+    transform: scale(5,5);
+}
+
+.modelo2 img:hover {
+    transform: scale(5,5);
+}
+
+.modelo3 img:hover {
+    transform: scale(5,5);
+}
+.titulo-casamento {
+    margin-bottom: 10px;
+}
+
+.planos-info {
+    max-width: 200px;
+    text-align: center;
+    
+}
+.planos {
+    display: flex;
+    max-width: 960px;
+    justify-content: space-around;
+}
+.planos h2 {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+.planos-info p {
+    padding: 10px;
+    border: 1px solid;
+}
+
+
+
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+footer p {
+    padding: 5px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    padding: 10px;
+}
+
+footer div p:hover {
+    border-bottom: 1px solid blue;
+}
+
