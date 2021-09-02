@@ -7,6 +7,14 @@ a {
     text-decoration: none;
 }
 
+p {
+    color: rgb(83, 83, 83);
+}
+
+h3 {
+    color: #fff;
+}
+
 li {
     list-style: none;
 }
@@ -21,7 +29,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   padding: 7px;
+    padding: 7px;
 }
 
 
@@ -71,6 +79,7 @@ article div {
     padding: 10px;
     background: #000;
     color: #fff;
+    font-size: .9em;
 }
 
 .menu a:hover {
@@ -81,7 +90,11 @@ article div {
 
 .sociais {
     display: flex;
-    width: 35%;
+    width: 110px;
+}
+
+.logo {
+    display: none;
 }
 
 .sociais a {
@@ -93,24 +106,25 @@ article div {
 }
 
 .mensagem-capa {
-    padding: 2px;
+    width: 80%;
     position: relative;
-    max-width: 280px;
-    margin: 0 auto;
-    background: #000;
+    margin-left: 10px;
+    margin: 0 auto;background: #000;
     color: #fff;
     text-align: center;
     margin-top: -25px;
+    padding: 15px;
     animation: show 1s forwards;
 }
 
 .mensagem {
-    font-size: .9em;
+    font-size: .8em;
     display: none;
 }
 
 .autor {
-    font-size: .7em;
+    margin-top: 3px;
+    font-size: .6em;
     display: none;
 }
 
@@ -126,12 +140,12 @@ article div {
 }
 
 .sobre {
-    margin: 50px auto;
+    margin: 20px auto 0 auto;
     text-align: center;
 }
 
 .momentos {
-    max-width: 260px;
+    width: 75%;
 }
 
 .sobre h1 {
@@ -141,7 +155,7 @@ article div {
 .sobre p {
     margin-bottom: 2px;
     font-family: monospace;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .img-detalhes img{
@@ -151,14 +165,14 @@ article div {
 .menu-img {
     display: flex;
     justify-content: center;
-    margin-top: -5vh;
+    margin-top: 10px;
 }
 
 .menu-img div {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
     margin-left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
     cursor: pointer;
     border: 1px solid black;
 }
@@ -168,12 +182,14 @@ article div {
 }
 
 .img-detalhes img.ativo {
+    margin: 10px auto 0 auto;
     display: block;
     animation: show-img 1s forwards;
 }
 
 .troca-cor {
-    background: #000;
+    background: rgb(61, 61, 61);
+    transform: scale(1.3, 1.3);
 }
 
 @keyframes show-img {
@@ -188,33 +204,80 @@ article div {
     }
 }
 
-.planos-info {
-    max-width: 180px;
-    margin: 0 auto;
+.text-planos {
     text-align: center;
+    margin-top: 30px;
 }
 
-.planos-info h2 {
-    background: #000;
-    color: #fff;
-    margin-bottom: 3px;
+.planos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
 }
 
-.planos-info div {
-    margin-bottom: 25px;
+.planos div {
+    box-shadow: 5px 5px 5px rgb(122, 122, 122);
+    background: rgb(240, 240, 240);
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.planos-info p {
-    border: 1px solid black;
-    padding: 3px;
-    margin-bottom: 0px;
+.comprar-pacote button:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.planos h3 {
+    margin-bottom: 10px;
+}
+
+.planos h3::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: rgb(199, 199, 199);
+    display: inline-block;
+}
+
+.planos p::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: rgb(199, 199, 199);
+    display: inline-block;
+}
+
+.planos p {
+    margin-bottom: 7px;
+}
+
+.comprar-pacote {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.planos button {
+    width: 100%;
+    padding: 5px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
 }
 
 footer {
-    background: #000;
+    background: rgb(0, 0, 0);
     color: #fff;
     text-align: center;
     padding: 10px;
+    margin-top: 15px;
+    font-size: .8em;
 }
 
 footer div {
@@ -233,266 +296,166 @@ footer a:hover {
 
         /*  FORMATAÇÃO MEDIA    */
 
-
-@media (min-width: 400px) {
-
-    .menu a{
-        font-size: 3vh;
-    }
+@media (min-width: 450px) {
 
     .sociais {
-        width: 20%;
-        margin-right: 5px;
+        width: 120px;
     }
-
+    .logo {
+        display: none;
+    }
     .mensagem-capa {
-        max-width: 370px;
+        margin-top: -40px;
     }
-
     .mensagem {
-        font-size: 2.5vh;
+        font-size: 1.1em;
     }
     .autor {
-        font-size: 2.3vh;
+        font-size: 1em;
     }
-
-    .sobre {
-        font-size: 2.4vh;
-        max-width: 450px;
-    }
-
-    .bolinha {
-        margin-top: 5px;
-    }
-
-    .menu-img div {
-        margin-left: 10px;
-    }
-
-    .planos-info div {
-        padding: 20px;
-        text-align: center;
-    }
-
-    footer {
-        font-size: .8em;
-    }
-
-    footer p {
-        margin-bottom: 20px;
+    .momentos p {
+        font-size: 1.1em;
     }
 }
 
-@media (min-width: 600px) {
-
-    .menu a{
-        font-size: 3vh;
+@media (min-width: 650px) {
+    .logo {
+        display: block;
     }
-
-    .sociais {
-        width: 20%;
-        margin-right: 5px;
-    }
-
-    .mensagem-capa {
-        max-width: 570px;
-    }
-
     .mensagem {
-        font-size: 2.5vh;
+        font-size: 1em;
     }
     .autor {
-        font-size: 2.3vh;
+        font-size: .7em;
     }
-
-    .sobre {
-        font-size: 2.4vh;
-        max-width: 550px;
-    }
-
-    .bolinha {
-        margin-top: 5px;
-    }
-
-    .menu-img div {
-        margin-left: 10px;
-    }
-
-    .planos article{
-        display: flex;
-        text-align: center;
-        font-size: 1em;
-        justify-content: center;
-    }
-
-    .planos-info p {
-        height: 60px;
-        width: 150px;
-    }
-
-    footer {
-        font-size: 0.8em;
-    }
-
-    footer p {
-        margin-bottom: 20px;
+    .momentos p {
+        font-size: 1.2em;
     }
 }
 
 @media (min-width: 900px) {
 
-    .heading {
-        height: 10vh;
-    }
-
-    .menu-mobile{
-       display: none;
-    }
-
-    .menu ul.menu-ativo {
-        display: none;
-    }
-
     .menu {
-        display: flex;
-        justify-content: space-around;
+        font-size: 1.3em;
     }
-
-    .menu ul {
-        display: flex;
+    .sociais {
+        width: 110px;
     }
-
-    .menu a:hover {
-        border-radius: 10px;
+    .logo {
+        display: block;
     }
-
     .mensagem-capa {
-        max-width: 850px;
-        top: -10px;
-
+        margin-top: -50px;
     }
-
     .mensagem {
-        font-size: 3vh;
+        font-size: 1.2em;
     }
     .autor {
-        font-size: 2.7vh;
+        font-size: .8em;
     }
-
-    .sobre {
-        font-size: 3vh;
-        max-width: 860px;
+    .momentos p {
+        font-size: 1.2em;
     }
 
     .img-detalhes {
-        width: 900px;
+        max-width: 800px;
+        margin: 0 auto;
     }
 
-    .bolinha {
-        margin-top: 40px;
-        padding: 7px;
+    .menu-img div {
+        width: 15px;
+        height: 15px;
+        margin-left: 10px;
     }
-
-    .planos article{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        font-size: 1em;
+    h1{
+        font-size: 2em;
     }
-
-    .planos p {
-        font-size: 1.5em;
-    }
-
-
-
-    footer {
+    h3 {
         font-size: 1.4em;
     }
+    .planos {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .planos div {
+        width: 25%;
+    }
+    .planos p {
+        font-size: 1.3em;
+    }
+    .planos button {
+        font-size: 1.3em;
+    }
+    footer {
+        font-size: 1.3em;
+    }
 }
-
 
 @media (min-width: 1000px) {
 
-    .capa img{
-        height: 60vh;
+    .menu ul.menu-ativo  {
+        width: 30%;
     }
-
-    .heading {
-        display: flex;
-        justify-content: space-around;
+    .menu a{
+        font-size: 1em;
     }
-    
-    .menu-mobile{
-       display: none;
-    }
-
-    .menu ul.menu-ativo {
-        display: none;
-    }
-
-    .menu {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .menu ul {
-        display: flex;
-    }
-
-    .menu a:hover {
-        border-radius: 10px;
-    }
-
     .sociais {
-        width: 12%;
+        width: 160px;
     }
-
-    .sociais a {
-        margin-left: 10px;
+    .capa img{
+        height: 70vh;
     }
-
+    .logo {
+        display: block;
+    }
     .mensagem-capa {
-        max-width: 850px;
-        top: -200px;
-
+        margin-top: -50px;
     }
-
     .mensagem {
-        font-size: 4vh;
-        margin-bottom: 5px;
+        font-size: 1.2em;
     }
     .autor {
-        font-size: 2.7vh;
+        font-size: .8em;
     }
 
-    .sobre {
-        font-size: 2.5vh;
-        max-width: 960px;
+    .momentos p {
+        font-size: 1.2em;
     }
 
     .img-detalhes {
-        width: 960px;
+        max-width: 800px;
+        margin: 0 auto;
     }
 
-    .bolinha {
-        padding: 1px;
-        margin-top: -9px;
+    .menu-img div {
+        width: 15px;
+        height: 15px;
+        margin-left: 10px;
     }
 
-    .planos article{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        font-size: 1em;
+    h1{
+        font-size: 2em;
     }
 
+    h3 {
+        font-size: 1.4em;
+    }
+    .planos {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 900px;
+        margin: 0 auto;
+    }
+    .planos div {
+        width: 25%;
+    }
     .planos p {
-        font-size: 1em;
+        font-size: 1.1em;
     }
-    
+    .planos button {
+        font-size: 1.1em;
+    }
     footer {
         font-size: 1em;
     }
 }
-
