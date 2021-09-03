@@ -271,6 +271,52 @@ article div {
     font-size: 1rem;
 }
 
+.agendar {
+    margin-left: -100%;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    flex-direction: column;
+    padding: 10px;
+    width: 80%;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.agendar h1{
+    margin-bottom: 25px;
+}
+
+input {
+    width: 90%;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.btn {
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.btn button {
+    width: 70px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.txt-area {
+    margin: 0 auto;
+}
+textarea {
+    border-radius: 10px;
+    height: 110px;
+}
+
 footer {
     background: rgb(0, 0, 0);
     color: #fff;
@@ -316,6 +362,10 @@ footer a:hover {
     .momentos p {
         font-size: 1.1em;
     }
+
+    .agendar {
+        width: 75%;
+    }
 }
 
 @media (min-width: 650px) {
@@ -330,6 +380,10 @@ footer a:hover {
     }
     .momentos p {
         font-size: 1.2em;
+    }
+
+    .agendar {
+        width: 40%;
     }
 }
 
@@ -388,6 +442,9 @@ footer a:hover {
     }
     footer {
         font-size: 1.3em;
+    }
+    .agendar {
+        width: 30%;
     }
 }
 
@@ -457,5 +514,8 @@ footer a:hover {
     }
     footer {
         font-size: 1em;
+    }
+    .agendar {
+        width: 30%;
     }
 }
