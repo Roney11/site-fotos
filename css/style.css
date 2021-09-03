@@ -283,6 +283,7 @@ article div {
     color: #fff;
     text-align: center;
     font-size: 1.1em;
+    overflow: auto;
 }
 
 .agendar h1{
